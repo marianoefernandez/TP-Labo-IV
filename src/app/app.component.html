@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido</title>
+</head>
+<body>
+
+    <h1>Bienvenido a la App</h1>
+
+    <!-- Código ejemplo en clase
+    <h1>{{title}}</h1>
+
+    <input [type]='miTipo' [(ngModel)]="title">
+    <input type="button" (click)="MostrarAlert()">
+    <input type="button" (click)="CambiarTitulo()" value="Cambiar título">
+    <br><br><br>
+
+    <p>Ingrese el numero 1</p>
+    <input [type]='miTipo' [(ngModel)]="miSuma.numero1">
+    <br>
+    <p>Ingrese el numero 2</p>
+
+    <input [type]='miTipo' [(ngModel)]="miSuma.numero2">
+
+    <br><br>
+
+
+    <input type="button" (click)="miSuma.Sumar()" value="Mostrar Resultado">
+
+    <br><br>
+    <p>Resultado:</p>
+
+    <input [type]='miTipo' [value]="miSuma.resultado">
+
+        --->
+    <h1>Ejercicio 1</h1>
+    <br>
+    <p>1- (app.component.html) Realizar:
+        una aplicacion que se le ingresen dos edades en dos cuadro de textos
+        edadUno, EdadDos <br>
+        mostrar el promedio y la suma en dos cuadros de textos nuevos
+        botones "calcular" y "limpiar cuadros de textos"</p>
+    <p>Ingrese la primer edad: </p>
+    <input type="number" value="Ingrese una edad:" [(ngModel)] = "edadUno" placeholder = "Ingrese un número">
+    <p>Ingrese la segunda edad</p>
+    <input type="number" value="Ingrese una edad" [(ngModel)] = "edadDos" placeholder = "Ingrese un número">
+    <br><br>
+    <input type="button" value="Calcular Promedio" style="background-color: green" (click) = "CalcularPromedio()">
+    <input type="button" value="Limpiar" style="background-color: blue" (click) = "Limpiar()">
+    <p>Promedio:</p>
+    <input type="number" readonly [value] = "promedio" placeholder = "Resultado">
+    
+    <h3>Ruteo</h3>
+
+    <p>
+        Al apretar el boton va a hacer un ruteo del componente login
+    </p>
+
+    <input type="button" value="Login Componente"  (click) = "Rutear('login')">
+
+    <router-outlet></router-outlet>
+
+</body>
+</html>
+
