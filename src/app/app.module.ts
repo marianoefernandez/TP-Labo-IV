@@ -5,18 +5,18 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
 import { LoginComponent } from './login/login.component';
-import { BienvenidoComponent } from './bienvenido/bienvenido.component';
-import { ErrorComponent } from './error/error.component';
 import { AppRountingModule } from './app-rounting.module';
 import { RouterModule } from '@angular/router';
+import { HomeComponent } from './home/home.component';
+import { QuienSoyComponent } from './quien-soy/quien-soy.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    BienvenidoComponent,
-    ErrorComponent
+    HomeComponent,
+    QuienSoyComponent
   ],
   imports: [
     BrowserModule,
